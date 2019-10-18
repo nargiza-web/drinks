@@ -1,0 +1,10 @@
+extend layout
+
+block content
+    h1 DRINKS
+    h3 Categories
+      ul 
+        each cat in categories
+          li
+            - var catUrl='/categories/'+cat.id
+             a(href=catUrl)=cat.name

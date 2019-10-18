@@ -1,0 +1,26 @@
+{
+  "name": "drinks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm run db:migrate && npm run serve",
+    "serve": "node app.js",
+    "db:migrate": "npx sequelize-cli db:migrate"
+  },
+  "keywords": [],
+  "author": "Nargiza Ozek",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "pg": "^7.12.1",
+    "pug": "^2.0.4",
+    "sequelize": "^5.19.8"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^5.5.1"
+  }
+}
